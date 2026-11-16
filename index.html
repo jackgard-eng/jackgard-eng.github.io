@@ -1,13 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jack Gardiner | Mechanical Engineering</title>
+  <meta name="description" content="Engineering portfolio of Jack Gardiner, Master of Professional Engineering (Mechanical) student at the University of Western Australia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: sans-serif; max-width: 700px; margin: 60px auto; padding: 0 20px;">
-  <h1>Jack Gardiner</h1>
-  <p>Mechanical Engineering student at the University of Western Australia.</p>
-  <p>Project portfolio coming soon.</p>
+<body>
+
+  <header class="wrap site-head">
+    <a href="index.html">Jack Gardiner</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <h1>Jack Gardiner</h1>
+      <p class="lede">Mechanical engineering student at the University of Western Australia, focused on fluid mechanics and heat transfer.</p>
+      <div class="legend-block" aria-hidden="true">
+        <div class="legend"></div>
+        <div class="legend-scale"><span>Theory</span><span>Simulation</span><span>Hardware</span></div>
+      </div>
+    </div>
+
+    <section id="projects" class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <a href="cfd.html" tabindex="-1" aria-hidden="true">
+          <img src="images/cfd/week06a-hx-temperature.jpg"
+               alt="Temperature contours around a staggered bank of hot tubes, showing thin thermal boundary layers and warm wakes."
+               width="1215" height="671">
+        </a>
+        <div>
+          <h3><a href="cfd.html">Computational fluid dynamics studies</a></h3>
+          <p>Nine simulations in Ansys Fluent covering pipe flow, jets, heat exchangers, vortex shedding, multiphase droplets and slurry transport. Each one is meshed, solved and checked for convergence, with coarse and fine meshes compared on several of them.</p>
+          <ul class="tags">
+            <li>Ansys Fluent 2025 R2</li>
+            <li>Meshing</li>
+            <li>Turbulence modelling</li>
+            <li>Heat transfer</li>
+            <li>Multiphase</li>
+          </ul>
+          <a class="button" href="cfd.html">View the CFD work</a>
+        </div>
+      </article>
+
+      <p class="note">More projects are on the way, including hardware builds and my thesis research.</p>
+    </section>
+
+    <section id="about" class="wrap">
+      <h2>About</h2>
+      <div class="two-col">
+        <div>
+          <p>I'm in the penultimate year of a Master of Professional Engineering (Mechanical) at UWA in Perth. Thermodynamics and fluid mechanics are where I do my best work, and my thesis looks at slurry pipeline flow.</p>
+          <p>Outside uni I like building things: CAD in Fusion 360, 3D printing and electronics.</p>
+        </div>
+        <dl class="facts">
+          <dt>Study</dt>
+          <dd>Master of Professional Engineering (Mechanical), University of Western Australia</dd>
+          <dt>Experience</dt>
+          <dd>17 months at WSP's Advanced Geomechanics Laboratory: precision instrumentation, calibration and quality documentation</dd>
+          <dt>Tools</dt>
+          <dd>Ansys Fluent, MATLAB, Fusion 360</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>Contact</h2>
+      <p>I'm looking for internships and vacation placements in mechanical engineering.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:jack.2k@icloud.com">jack.2k@icloud.com</a></li>
+        <!-- Replace the # below with your LinkedIn URL, e.g. https://www.linkedin.com/in/your-name -->
+        <li><a href="#">LinkedIn</a></li>
+        <!-- To add your CV: upload cv.pdf to the repository, then remove the comment marks around the next line -->
+        <!-- <li><a href="cv.pdf">Download my CV (PDF)</a></li> -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="legend" aria-hidden="true"></div>
+    <p>&copy; 2026 Jack Gardiner</p>
+  </footer>
+
 </body>
 </html>
